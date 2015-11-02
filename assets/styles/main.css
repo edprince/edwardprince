@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.ws {
+  height: 100vh;
+  position: relative;
+  padding-left: 4em;
+  padding-right: 4em;
+  box-sizing: border-box;
+  padding-top: 4em;
+}
+
+i {
+  position: absolute;
+  text-align: center;
+  font-size: 3em;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-21px, 0);
+  -webkit-transform: translate(-21px, 0);
+  -moz-transform: translate(-21px, 0);
+  -o-transform: translate(-21px, 0);
+  -ms-transform: translate(-21px, 0);
+  cursor: pointer;
+}
+
+
+
+.odd {
+  background-color white;
+  color: #242329;
+}
+
+.even {
+  background-color: #242329;
+  color: white;
+  box-shadow: 0px 0px 20px black;
+}
+
+.odd i {
+  color: #242329;
+}
+
+.even i {
+  color: white;
+}
+
+nav {
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  text-align: right;
+  border-bottom: solid 2px #efefef;
+  padding-top: 1.5em;
+  box-sizing: border-box;
+}
+
+nav a {
+  margin-right: 3em;
+  color: grey;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.left-align {
+  text-align: left;
+  left: 1em;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.header {
+  background-color: #3A424D;
+}
+
+.absolute-overlay {
+  position: absolute;
+  left: 50%;
+  border: solid 5px white;
+  width: 300px;
+  transform: translate(-150px, 0);
+  top: 10em;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
