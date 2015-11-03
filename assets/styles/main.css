@@ -60,14 +60,15 @@ nav {
   position: fixed;
   z-index: 1;
   width: 100%;
-  text-align: right;
+  text-align: center;
   border-bottom: solid 3px #efefef;
   padding-top: 1.5em;
   box-sizing: border-box;
 }
 
 nav a {
-  margin-right: 3em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
   color: grey;
   text-transform: uppercase;
   text-decoration: none;
@@ -103,4 +104,16 @@ nav a:hover {
 
 p {
   font-size: 1.4em;
+}
+
+.profile {
+  border-radius: 50%;
+  background-image: url('http://philosophy.ucr.edu/wp-content/uploads/2014/10/no-profile-img.gif');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  float: left;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  margin-right: 2em;
 }
