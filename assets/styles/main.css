@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h1 {
@@ -33,7 +33,6 @@ i {
   -ms-transform: translate(-21px, 0);
   cursor: pointer;
 }
-
 
 
 .odd {
@@ -85,6 +84,7 @@ nav a:hover {
 
 .header {
   background-color: #3A424D;
+  background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2012/04/03/1974/9c5b45681e749b17a80879dfd93f8108.jpg');
 }
 
 .absolute-overlay {
@@ -99,4 +99,8 @@ nav a:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5em;
+}
+
+p {
+  font-size: 1.4em;
 }

@@ -18,6 +18,9 @@ function main(){
       .attr('class', 'ws')
       .attr('id', 'ws-' + (i));
     if ((i) % 2 === 0) {
+      if (i === 0) {
+        $(this).addClass('header');
+      }
       $(this).addClass('even');
     } else {
       $(this).addClass('odd');
@@ -29,12 +32,16 @@ function main(){
     console.log("Length - ", length);
     if ((i + 1) === length) {
       console.log("Up arrow");
-      $(this).children('a').attr('href', '#ws-0');
-      $(this).children('a').children('i').addClass('ion-chevron-up');
+      $(this).children('a')
+        .attr('href', '#ws-0')
+        .children('i')
+          .addClass('ion-chevron-up');
     } else {
       console.log($(this) + ' .ws');
-      $(this).children('a').attr('href', '#ws-' + (i + 1));
-      $(this).children('a').children('i').addClass('ion-chevron-down');
+      $(this).children('a')
+        .attr('href', '#ws-' + (i + 1))
+        .children('i')
+        .addClass('ion-chevron-down');
     }
   });
 
