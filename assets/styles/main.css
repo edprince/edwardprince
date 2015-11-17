@@ -43,7 +43,6 @@ i {
 .even {
   background-color: #242329;
   color: white;
-  box-shadow: 0px 0px 20px black;
 }
 
 .odd i {
@@ -55,21 +54,27 @@ i {
 }
 
 nav {
-  height: 70px;
-  background-color: white;
+  height: 50px;
   position: fixed;
   z-index: 1;
   width: 100%;
   text-align: center;
-  border-bottom: solid 3px #efefef;
-  padding-top: 1.5em;
+  border-bottom: solid 1px #efefef;
+  padding-top: .8em;
   box-sizing: border-box;
+  transition-duration: .3s;
 }
+
+.scrollNav {
+  background-color: white !important;
+  transition-duration: .3s;
+}
+
 
 nav a {
   margin-right: 1.5em;
   margin-left: 1.5em;
-  color: grey;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -80,12 +85,14 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
+  color: #656565 !important;
 }
 
 .header {
   background-color: #3A424D;
-  background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2012/04/03/1974/9c5b45681e749b17a80879dfd93f8108.jpg');
+  background-image: url('http://volny.github.io/creative-theme-jekyll/img/header.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .absolute-overlay {

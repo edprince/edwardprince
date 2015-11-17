@@ -45,6 +45,18 @@ function main(){
     }
   });
 
+  //Code to change appearance of nav bar upon scrolling
+  $(window).scroll(function(){
+    console.log('Hello');
+    if ($(window).scrollTop() > 60) {
+      $('nav').addClass('scrollNav');
+      $('nav a').css('color', 'grey');
+    } else {
+      $('nav').removeClass('scrollNav');
+      $('nav a').css('color', 'white');
+    }
+  });
+
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
